@@ -1,0 +1,195 @@
+body {
+    background-image: url("images/h.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Styling for the hospital name to align it to the left */
+#hname {
+    position: absolute;
+    left: 20px; /* Adjust this to control the distance from the left */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: blue;
+}
+
+/* Content Styling */
+.content {
+    padding: 80px 20px 20px; /* Add top padding to avoid navbar overlap */
+    text-align: center;
+}
+
+button {
+    background-color: #4a25b3; 
+    color: white; 
+    padding: 12px 24px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0a0044; 
+}
+
+button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(2, 0, 8, 0.6);
+}
+
+/* Generic Form Styling */
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Reduced width */
+    z-index: 10;
+    font-family: Arial, sans-serif;
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Background blur when form is visible */
+form::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+table a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+table a:hover {
+    color: #0056b3;
+}
+
+table caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}

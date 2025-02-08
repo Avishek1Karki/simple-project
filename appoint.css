@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+table a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+table a:hover {
+    color: #0056b3;
+}
+
+table caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+#appointmentForm {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    display: none;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+form button {
+    width: 100%;
+}
